@@ -1,0 +1,97 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="styles.css">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+                    rel="stylesheet">
+                <title>Calculator</title>
+            </head>
+            <body>
+                <script>
+                    let calculation = '';
+                </script>
+            <div class="main-div"><div class="display-area"></div>
+                <div class="div-1">
+                    <button onclick="
+                        calculation = calculation+'1';
+                        displayCalculation();
+                        ">1</button>
+                    <button onclick="
+                        calculation = calculation+'2';
+                        displayCalculation();
+                        ">2</button>
+                    <button onclick="
+                        calculation = calculation+'3';
+                        displayCalculation();
+                        ">3</button>
+                </div><div class="div-2">
+                    <button onclick="
+                        calculation = calculation+'4';
+                        displayCalculation();
+                        ">4</button>
+                    <button onclick="
+                        calculation = calculation+'5';
+                        displayCalculation();
+                        ">5</button>
+                    <button onclick="
+                        calculation = calculation+'6';
+                        displayCalculation();
+                        ">6</button>
+                </div><div class="div-3">
+                    <button onclick="
+                        calculation = calculation+'7';
+                        displayCalculation();
+                        ">7</button>
+                    <button onclick="
+                        calculation = calculation+'8';
+                        displayCalculation();
+                        ">8</button>
+                    <button onclick="
+                        calculation = calculation+'9';
+                        displayCalculation();
+                        ">9</button>
+                </div><div class="div-4">
+                    <button onclick="
+                        calculation = calculation+'0';
+                        displayCalculation();
+                        ">0</button>
+                    <button style="background-color: #2D3136;" onclick="
+                    calculation = calculation + ' / ';
+                    displayCalculation();
+                    ">/</button>
+                    <button style="color: black; background-color: #FBBD60;" onclick="
+                    calculation = eval(calculation);
+                    displayCalculation();
+                    ">=</button>
+                </div>
+                <div class="div-5">
+                    <button style="background-color: #2D3136;" onclick="
+                        calculation = calculation+ ' + ';
+                        displayCalculation();
+                        ">+</button>
+                    <button style="background-color: #2D3136;" onclick="
+                    calculation = calculation + ' - ';
+                    displayCalculation();
+                    ">-</button>
+                    <button style="background-color: #2D3136;" onclick="
+                    calculation = calculation + ' * ';
+                    displayCalculation();
+                    ">*</button>
+                </div>
+                <div class="div-6">
+                    <button style="color: black; background-color: #FBBD60;" onclick="
+                        calculation = '';
+                        displayCalculation();
+                        ">Clear</button>
+
+                </div></div>
+                <script>
+                                function displayCalculation() {
+                                        document.querySelector('.display-area').innerHTML = calculation}
+                </script>
+            </body>
+            </html>
